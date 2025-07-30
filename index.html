@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="toggleMode">🌙 Toggle Dark Mode</button>
+  <div class="container">
+    <h1>Flashcard Quiz</h1>
+    <div class="card-container">
+      <div class="card" id="flashcard">
+        <div class="front" id="question">Question will appear here</div>
+        <div class="back" id="answer">Answer will appear here</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="showAnswer()">Show Answer</button>
+      <button onclick="previousCard()">Previous</button>
+      <button onclick="nextCard()">Next</button>
+      <button onclick="addCard()">Add</button>
+      <button onclick="editCard()">Edit</button>
+      <button onclick="deleteCard()">Delete</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
